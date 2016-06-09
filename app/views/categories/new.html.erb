@@ -1,0 +1,8 @@
+<% if user_signed_in?%>
+ <h1> Add Category </h1>
+ <%= form_for @category do |f| %>
+ <%= f.label :Category %>
+ <%= f.text_field :name %>
+ <%= f.submit "Add Category" ,class: "btn btn-primary" %>
+ <% end %>
+ <% end %>

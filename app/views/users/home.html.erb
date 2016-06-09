@@ -1,2 +1,45 @@
-<h1>Users#home</h1>
-<p>Find me in app/views/users/home.html.erb</p>
+<p class='left'><%= link_to 'Home',root_path %></p>
+<div class = "col-sm-2">
+<p class = "category"> Category </p>
+<div>
+	<% @category.each do |category| %>
+	<p> <%=link_to category.name ,category_path(category.id) %>
+	<% if user_signed_in? && current_user.admin? %> 
+	 <%= link_to "delete", user_path(category.id), class: "delete", method: :delete,
+                                       data: { confirm: "You sure?" } %><% end %></p>
+	<% end %>
+</div>
+</div>
+
+<div class = "col-sm-10">
+<p class = "title_items" > Items </p>
+	<% @product.each do |product| %>
+	<div class="img">
+
+	<%= link_to product_path(product.id) do%>
+		<img src = '<%=product.image %>' alt= product.img>
+	<% end%>
+
+	<br ><span class ='blue'><%=product.product_name %></span><br >
+	<p> <span class ='red'>Price: <%= product.price %> VND</span><br></p>
+	<!-- <span class='border'><%= link_to 'Mua' ,'#', data: {confirm: "Are you sure ?"}%></span><br > -->
+	</div>
+	<% end %>
+</div>
+<div class="col-sm-12"><%= will_paginate @product%></div>
+
+<div class = "col-sm-2">
+</div>
+
+<div class = "col-sm-10">
+<p class = "newest" > Newest </p>
+	<% @products.each do |product| %>
+	<div class="img">
+		<%= link_to product_path(product.id) do%>
+		<img src = '<%=product.image %>' alt= product.img>
+	<% end%>
+	<br ><span class ='blue'><%=product.product_name %></span><br >
+	<p><span class='red'> Price: <%= product.price %> VND</span><br ></p>
+	</div>
+	<% end %>
+</div>

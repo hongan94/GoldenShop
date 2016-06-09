@@ -6,9 +6,11 @@
 $gray-medium-light: #eaeaea;
 
 /* universal */
-
 body {
-  padding-top: 60px;
+  padding-top: 100px;
+}
+.navbar-inverse{
+  height: 120px;
 }
 
 section {
@@ -21,6 +23,7 @@ textarea {
 
 .center {
   text-align: center;
+  margin-left: 130px;
   h1 {
     margin-bottom: 10px;
   }
@@ -33,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 1.5em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -41,12 +44,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  height:25px;
+  font-size: 3em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
   color: $gray-light;
+  margin-left:120px;
 }
 
 p {
@@ -102,3 +107,121 @@ input {
   margin-top:  15px ;
   margin-left: 13px;
 }
+.new_user{
+  text-align: center;
+  border: 2px #fff solid;
+}
+label{
+  width:120px;
+}
+input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+    margin-left: 100px;
+}
+.btn-primary{
+    margin: 5px;
+    margin-left: 145px;
+    width: 120px;
+}
+.a-sigup{
+  text-align: center;
+
+}
+.category{
+  text-align: center;
+  width:160px;
+  background-color: #1fddf2;
+}
+.title_items{
+  float: left;
+  text-align: center;
+  background-color: #1fddf2;
+  width: 100%;
+}
+.newest{
+  text-align: center;
+  background-color: #1fddf2;
+  width: 100%;
+}
+.img{
+  float: left;
+  height: 300px;
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 45px
+}
+.img img{
+  height: 180px;
+  width: 160px;
+  border: 1px solid #f27a09
+}
+.navbar navbar-fixed-top navbar-inverse{
+  height:100px;
+}
+.search{
+  margin-top:80px;
+}
+.btn-search{
+  margin-top: 65px;
+}
+.delete{
+  text-align: right;
+  color:red;
+}
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    margin-top: 30px;
+}
+.blue
+{
+    color: blue;
+    text-align: center;
+}
+.red{
+  color:red;
+}
+div.pagination{
+  margin-left: 50%
+}
+.border a{
+      padding: 5px 25px;
+    background: indigo;
+}
+#message_area{
+  height:180px;
+  width: 500px ;
+
+  margin-top: 10px;
+}
+.item{
+  float: left;
+  height: 300px;
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 45px
+}
+.item img{
+  height: 180px;
+  width: 160px;
+  border: 1px solid #f27a09
+  }
+  #submit{
+    text-align: center;
+    margin-left: 200px;
+  }
+  .left input{
+    margin-left: 5px;
+    margin-bottom: -10px;
+  }
+  .form-inline{
+    text-align: center;
+  }
+  .form-inline .form-control{
+    width: 60%;
+  }

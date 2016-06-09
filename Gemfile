@@ -10,6 +10,7 @@ gem 'mini_magick',             '3.8.0'
 gem 'fog',                     '1.36.0'
 gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
+gem "ransack"
 gem 'delayed_job_active_record'
 gem 'sass-rails',   '5.0.2'
 gem 'uglifier',     '2.5.3'
@@ -18,6 +19,7 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'devise'
+gem 'sunspot_rails'
 gem 'sdoc',         '0.4.0', group: :doc
 
 group :development, :test do
@@ -25,6 +27,7 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+  gem 'sunspot_solr'
 end
 
 group :production do

@@ -1,0 +1,24 @@
+<p><%= link_to 'Home > ',root_path %><%= link_to "Search Result" ,'' %></p>
+<div class = "col-sm-2">
+<p class = "category"> Category </p>
+<div>
+	<% @categorys.each do |category| %>
+	<p> <%=link_to category.name ,category_path(category.id) %></p>
+	<% end %>
+</div>
+</div>
+
+<div class = "col-sm-10">
+<p class = "title_items" >Result for <%=@search.product_name_or_price_start %></p>
+	<% @products.each do |product| %>
+	<div class="img">
+	
+	<%= link_to product_path(product.id) do%>
+		<img src = '<%=product.image %>' alt= product.img>
+	<% end%>
+	<br ><span class='blue'><%=product.product_name %></span><br >
+	<p><span class='red'> Price: <%= product.price %> VND</span><br ></p>
+	</div>
+	<% end %>
+
+</div>
